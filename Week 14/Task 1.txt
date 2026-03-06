@@ -1,0 +1,18 @@
+
+CREATE TABLE EMPLOYEE (
+Name varchar(20),
+EmpID int not null,
+Designation varchar(50),
+Salary int not null,
+Address varchar(50),
+Manager varchar(50)
+);
+
+
+INSERT INTO EMPLOYEE (Name,EmpID,Designation,Salary,Address,Manager) VALUES ('Mohan',1001,'Supervisior',50000,'Purani Chungi, Aligarh','Ayan');
+INSERT INTO EMPLOYEE (Name,EmpID,Designation,Salary,Address,Manager) VALUES ('Ram',1002,'Accountant',80000,'Jamalpur, Aligarh','Zahid');
+INSERT INTO EMPLOYEE (Name,EmpID,Designation,Salary,Address,Manager) VALUES ('Danish',1003,'Fresher',20000,'Dhorra, Aligarh','Deepanshu');
+INSERT INTO EMPLOYEE (Name,EmpID,Designation,Salary,Address,Manager) VALUES ('Rinki',1004,'Marketing Specialist',60000,'Rasalganj, Aligarh','Mohan');
+INSERT INTO EMPLOYEE (Name,EmpID,Designation,Salary,Address,Manager) VALUES ('Faiz',1005,'Software Engineer',100000,'Shamshad Market, Aligarh','Bilal');
+
+SELECT * FROM EMPLOYEE;

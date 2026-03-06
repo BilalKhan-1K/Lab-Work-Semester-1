@@ -1,0 +1,23 @@
+
+CREATE TABLE EMPLOYEE (
+Name varchar(10),
+EmpID int not null,
+Designation varchar(20),
+Salary int not null,
+Address varchar(30),
+Manager varchar(15),
+Contact int not null
+);
+
+
+INSERT INTO EMPLOYEE (Name,EmpID,Designation,Salary,Address,Manager,Contact) VALUES ('Mohan',1001,'Supervisior',50000,'Purani Chungi, Aligarh','Ayan',05412645);
+INSERT INTO EMPLOYEE (Name,EmpID,Designation,Salary,Address,Manager,Contact) VALUES ('Ram',1002,'Accountant',80000,'Jamalpur, Aligarh','Zahid',09897650);
+INSERT INTO EMPLOYEE (Name,EmpID,Designation,Salary,Address,Manager,Contact) VALUES ('Danish',1003,'Fresher',20000,'Dhorra, Aligarh','Deepanshu',5127861);
+INSERT INTO EMPLOYEE (Name,EmpID,Designation,Salary,Address,Manager,Contact) VALUES ('Rinki',1004,'Market Executive',60000,'Rasalganj, Aligarh','Mohan',4612451);
+INSERT INTO EMPLOYEE (Name,EmpID,Designation,Salary,Address,Manager,Contact) VALUES ('Faiz',1005,'Software Engineer',100000,'Shamshad Market, Aligarh','Bilal',2645791);
+
+SELECT * FROM EMPLOYEE;
+SELECT * FROM EMPLOYEE WHERE EmpID=1001;
+SELECT * FROM EMPLOYEE WHERE Salary>=20000;
+SELECT * FROM EMPLOYEE WHERE Name LIKE '%an%';
+SELECT * FROM EMPLOYEE WHERE Manager='Mohan';
